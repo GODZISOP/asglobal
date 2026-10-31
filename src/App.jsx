@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { categories, products } from './data/products';
 import { siteConfig } from './data/siteConfig';
-import logoImg from './images/ryprimeservice-logo.svg';
+import logoImg from './images/as-global-trading-logo.svg';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -477,14 +477,16 @@ export default function App() {
       {/* VIEW: HOME PAGE */}
       {activeTab === 'home' && (
         <main>
-          {/* HERO SECTION - LUXURY RY PRIME SERVICE SHOWCASE */}
+          {/* HERO SECTION - LUXURY AS GLOBAL TRADING SHOWCASE */}
           <section className="hero-section">
             <div className="hero-overlay"></div>
+            <div className="hero-orb hero-orb-1" aria-hidden="true"></div>
+            <div className="hero-orb hero-orb-2" aria-hidden="true"></div>
             <div className="hero-container">
               <div className="hero-content">
                 <div className="hero-eyebrow-badge">
                   <Sparkles size={14} className="hero-sparkle-icon" />
-                  <span>{siteConfig.eyebrowStandard || 'THE RY PRIME SERVICE STANDARD'}</span>
+                  <span>{siteConfig.eyebrowStandard || 'THE AS GLOBAL TRADING STANDARD'}</span>
                 </div>
                 <h1 className="hero-title">
                   Quality Products & <span className="hero-title-highlight">Global Wholesale</span>
@@ -560,6 +562,19 @@ export default function App() {
             </div>
           </section>
 
+          {/* ANIMATED KEYWORD TICKER */}
+          <div className="ticker-strip" aria-hidden="true">
+            <div className="ticker-track">
+              {[0, 1].map((n) => (
+                <div className="ticker-group" key={n}>
+                  {['Direct Sourcing', 'Bulk Wholesale Pricing', 'Global Shipping', 'Verified Quality', 'Trusted Trade Partner', 'Fast Fulfillment'].map((w) => (
+                    <span className="ticker-item" key={w + n}><Sparkles size={14} /> {w}</span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* SECTION 1: SHOP EVERYDAY ESSENTIALS */}
           <section id="categories-section" className="section-wrapper essentials-section">
             <div className="section-header-left">
@@ -626,7 +641,7 @@ export default function App() {
                     <div className="card-rating-row">
                       <div className="card-stars">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} size={13} fill="#f59e0b" color="#f59e0b" />
+                          <Star key={i} size={13} fill="#10b981" color="#10b981" />
                         ))}
                       </div>
                       <span className="card-rating-num">{prod.rating.toFixed(1)}</span>
@@ -665,7 +680,7 @@ export default function App() {
             </div>
           </section>
 
-          {/* THE RY PRIME SERVICE LLC DISTINCTION EXPERIENCE (BENTO SHOWPIECE) */}
+          {/* THE AS GLOBAL TRADING LLC DISTINCTION EXPERIENCE (BENTO SHOWPIECE) */}
           <section className="hf-experience-section">
             <div className="section-wrapper">
               <div className="section-header-center">
@@ -836,7 +851,7 @@ export default function App() {
             </div>
           </section>
 
-          {/* SECTION: CONTACT RY PRIME SERVICE LLC (ON HOME PAGE) */}
+          {/* SECTION: CONTACT AS GLOBAL TRADING LLC (ON HOME PAGE) */}
           <section id="contact-section" className="section-wrapper" style={{ padding: '60px 24px 70px' }}>
             <div style={{ maxWidth: '980px', margin: '0 auto' }}>
               <div className="section-header-center">
@@ -957,7 +972,7 @@ export default function App() {
                 Home
               </button>
               <span>/</span>
-              <span style={{ color: '#091526', fontWeight: '600' }}>Shop All Products</span>
+              <span style={{ color: '#04201a', fontWeight: '600' }}>Shop All Products</span>
             </div>
             
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '16px' }}>
@@ -1096,7 +1111,7 @@ export default function App() {
                     <div className="card-rating-row">
                       <div className="card-stars">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} size={13} fill="#f59e0b" color="#f59e0b" />
+                          <Star key={i} size={13} fill="#10b981" color="#10b981" />
                         ))}
                       </div>
                       <span className="card-rating-num">{prod.rating.toFixed(1)}</span>
@@ -1649,7 +1664,7 @@ export default function App() {
                 </div>
                 <div className="form-group">
                   <label className="form-label">Phone Number *</label>
-                  <input type="tel" required placeholder="(+966) / (+1) Phone" className="form-input" />
+                  <input type="tel" required placeholder="(+92) / (+1) Phone" className="form-input" />
                 </div>
               </div>
               <div className="form-group">
@@ -1822,8 +1837,8 @@ export default function App() {
                     <Globe size={20} color="var(--accent-teal)" />
                     <div>
                       <div style={{ color: '#94a3b8', fontSize: '0.8rem', textTransform: 'uppercase' }}>Official Website</div>
-                      <a href={`https://${(siteConfig.website || 'ryprimeservicellc.com').replace(/^https?:\/\//, '')}`} target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', fontWeight: '600' }}>
-                        {siteConfig.website || 'www.ryprimeservicellc.com'}
+                      <a href={`https://${(siteConfig.website || 'asglobaltradingllc.com').replace(/^https?:\/\//, '')}`} target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', fontWeight: '600' }}>
+                        {siteConfig.website || 'www.asglobaltradingllc.com'}
                       </a>
                     </div>
                   </div>
@@ -2212,7 +2227,7 @@ export default function App() {
                   </div>
                   <div className="form-group">
                     <label className="form-label">Phone Number / WhatsApp *</label>
-                    <input type="tel" required placeholder="(+966) / (+1) Phone" className="form-input" />
+                    <input type="tel" required placeholder="(+92) / (+1) Phone" className="form-input" />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Requested Quantity (Minimum: {selectedProduct.minOrder})</label>
@@ -2293,7 +2308,7 @@ export default function App() {
                   </div>
                   <div className="form-group">
                     <label className="form-label">WhatsApp / Phone Number *</label>
-                    <input type="tel" required placeholder="(+966) / (+1) Phone" className="form-input" />
+                    <input type="tel" required placeholder="(+92) / (+1) Phone" className="form-input" />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Delivery / Destination Address *</label>

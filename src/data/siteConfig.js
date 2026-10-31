@@ -1,10 +1,10 @@
-import defaultLogo from '../images/ryprimeservice-logo.svg';
+import defaultLogo from '../images/as-global-trading-logo.svg';
 
 /**
  * =========================================================================
  * 🌟 GLOBAL SITE CONFIGURATION (CENTRAL CONTROL PANEL)
  * =========================================================================
- * RY PRIME SERVICE LLC — Central Brand, Contact & Color Settings
+ * AS GLOBAL TRADING LLC — Central Brand, Contact & Color Settings
  * =========================================================================
  */
 
@@ -13,24 +13,24 @@ export const siteConfig = {
   // ─────────────────────────────────────────────
   // 🏢 COMPANY IDENTITY
   // ─────────────────────────────────────────────
-  companyName:     "RY Prime Service LLC",
-  shortName:       "RY Prime Service",
-  legalName:       "RY PRIME SERVICE LLC",
+  companyName:     "AS GLOBAL TRADING LLC",
+  shortName:       "AS GLOBAL TRADING",
+  legalName:       "AS GLOBAL TRADING LLC",
   tagline:         "Premium Wholesale, General Trading & Global Distribution",
-  heroSubtitle:    "Direct manufacturer sourcing, dependable bulk supply chains, and exceptional consumer essentials curated by RY Prime Service LLC.",
-  eyebrowStandard: "THE RY PRIME SERVICE STANDARD OF EXCELLENCE",
+  heroSubtitle:    "Direct manufacturer sourcing, dependable bulk supply chains, and exceptional consumer essentials curated by AS GLOBAL TRADING LLC.",
+  eyebrowStandard: "THE AS GLOBAL TRADING STANDARD OF EXCELLENCE",
 
   // ─────────────────────────────────────────────
   // 📞 PHONE, WHATSAPP & EMAIL
   // ─────────────────────────────────────────────
-  phonePrimary:    "(+966) 53 098 7507",   // Top nav display
-  phonePrimaryTel: "+966530987507",         // tel: dial link
-  phoneDirect:     "(+966) 53 098 7507",   // Contact page direct line
-  phoneDirectTel:  "+966530987507",         // tel: dial link
-  whatsappNumber:  "966530987507",          // Numbers only (no + or spaces)
-  whatsappDisplay: "(+966) 53 098 7507",
-  email:           "info@ryprimeservicellc.com",
-  website:         "www.ryprimeservicellc.com",
+  phonePrimary:    "(+92) 321 2218891",   // Top nav display
+  phonePrimaryTel: "+923212218891",         // tel: dial link
+  phoneDirect:     "(+92) 321 2218891",   // Contact page direct line
+  phoneDirectTel:  "+923212218891",         // tel: dial link
+  whatsappNumber:  "923212218891",          // Numbers only (no + or spaces)
+  whatsappDisplay: "(+92) 321 2218891",
+  email:           "info@asglobaltradingllc.com",
+  website:         "www.asglobaltradingllc.com",
 
   // ─────────────────────────────────────────────
   // 📍 ADDRESS & HUBS
@@ -52,8 +52,8 @@ export const siteConfig = {
   // ─────────────────────────────────────────────
   about: {
     // Main paragraphs
-    mission:      "At RY Prime Service LLC, our mission is to deliver exceptional wholesale value, connecting premier international manufacturers with retailers, commercial distributors, and online merchants worldwide. Founded on the principles of trust, transparency, and trade excellence, we serve as a reliable bridge between global suppliers and growing businesses.",
-    b2bNote:      "Whether you operate independent retail stores, supermarket chains, or e-commerce marketplaces, RY Prime Service LLC provides flexible minimums, volume price tiers, and dependable fulfillment. Our team ensures every order meets the highest quality and delivery standards you can count on.",
+    mission:      "At AS GLOBAL TRADING LLC, our mission is to deliver exceptional wholesale value, connecting premier international manufacturers with retailers, commercial distributors, and online merchants worldwide. Founded on the principles of trust, transparency, and trade excellence, we serve as a reliable bridge between global suppliers and growing businesses.",
+    b2bNote:      "Whether you operate independent retail stores, supermarket chains, or e-commerce marketplaces, AS GLOBAL TRADING LLC provides flexible minimums, volume price tiers, and dependable fulfillment. Our team ensures every order meets the highest quality and delivery standards you can count on.",
     sourcingNote: "We pride ourselves on thoughtful sourcing — choosing products that deliver genuine performance, high customer satisfaction, and dependable quality for retail and wholesale partners worldwide.",
 
     // 3 value cards shown on the About Us page
@@ -84,7 +84,7 @@ export const siteConfig = {
     tagline:      "We are at your service for catalog requests, partnership discussions, or general inquiries.",
     cardTitle:    "Direct Coordinates",
     formTitle:    "Send Us a Message",
-    formSuccess:  "Thank you! Your message has been received by RY Prime Service LLC. We will reply within 24 hours.",
+    formSuccess:  "Thank you! Your message has been received by AS GLOBAL TRADING LLC. We will reply within 24 hours.",
     labels: {
       email:      "Email",
       phone:      "Phone Number",
@@ -104,8 +104,8 @@ export const siteConfig = {
     newsletterSuccess:  "✓ Thank you for subscribing to our wholesale bulletin!",
     copyrightSuffix:    "All rights reserved.",
     managedByLabel:     "Global Logistics & Distribution Hub",
-    websiteUrl:         "https://www.ryprimeservicellc.com",
-    domain:             "ryprimeservicellc.com",
+    websiteUrl:         "https://www.asglobaltradingllc.com",
+    domain:             "asglobaltradingllc.com",
 
     // Social media
     socials: [
@@ -127,7 +127,7 @@ export const siteConfig = {
   // ⭐ TESTIMONIAL
   // ─────────────────────────────────────────────
   testimonial: {
-    quote:  "Partnering with RY Prime Service LLC transformed our wholesale inventory turnover. Top-tier product authenticity, fast fulfillment, and flawless communication.",
+    quote:  "Partnering with AS GLOBAL TRADING LLC transformed our wholesale inventory turnover. Top-tier product authenticity, fast fulfillment, and flawless communication.",
     author: "Verified Commercial Trade Partner"
   },
 
@@ -145,11 +145,11 @@ export const siteConfig = {
   // 🎨 COLOR THEME (Luxury Gold & Deep Royal Navy)
   // ─────────────────────────────────────────────
   theme: {
-    primaryNavy:   "#091526",
-    secondaryTeal: "#112a45",
-    accentTeal:    "#d97706",
-    accentHover:   "#b45309",
-    accentGold:    "#f59e0b",
+    primaryNavy:   "#04201a",
+    secondaryTeal: "#0b3a2e",
+    accentTeal:    "#059669",
+    accentHover:   "#047857",
+    accentGold:    "#10b981",
     bgLight:       "#f8fafc"
   }
 };

@@ -1,14 +1,14 @@
-# RY Prime Service LLC - Wholesale, General Trading & E-Commerce Website
+# AS GLOBAL TRADING LLC - Wholesale, General Trading & E-Commerce Website
 
-Official digital catalog and wholesale procurement portal for **RY PRIME SERVICE LLC**.
+Official digital catalog and wholesale procurement portal for **AS GLOBAL TRADING LLC**.
 
 ## 🌟 Overview
-* **Brand:** RY Prime Service LLC
+* **Brand:** AS GLOBAL TRADING LLC
 * **Tagline:** Premium Wholesale, General Trading & Global Distribution
 * **Website:** https://www.ryprimeservicellc.com
 * **Primary Contacts:**
   * **Email:** info@ryprimeservicellc.com
-  * **Phone / WhatsApp:** (+966) 53 098 7507
+  * **Phone / WhatsApp:** (+92) 321 2218891
   * **Operations:** Global Distribution & Wholesale Trade Hub (Middle East & North America)
 
 ## 🛍️ Product Catalog & Collections
