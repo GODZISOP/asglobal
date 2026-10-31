@@ -361,7 +361,7 @@ export default function App() {
                 <Truck size={14} />
                 <span>Fast Global Dispatch</span>
               </span>
-              <span className="blue-perk-divider">â€¢</span>
+              <span className="blue-perk-divider">•</span>
               <a href={`tel:${siteConfig.phonePrimaryTel}`} className="blue-perk-phone">
                 <Phone size={13} />
                 <span>{siteConfig.phonePrimary}</span>
@@ -786,7 +786,7 @@ export default function App() {
                     </p>
                     <div className="hf-testimonial-author">
                       <strong>Adil Al-Ghamdi</strong>
-                      <span>Verified Buyer â€¢ Riyadh, KSA</span>
+                      <span>Verified Buyer • Riyadh, KSA</span>
                     </div>
                   </div>
 
@@ -915,7 +915,7 @@ export default function App() {
                   </div>
 
                   <div style={{ marginTop: '28px', paddingTop: '18px', borderTop: '1px solid rgba(255,255,255,0.1)', fontSize: '0.85rem', color: '#b8aba0' }}>
-                    Managed by <strong>{siteConfig.companyName}</strong> â€¢ Global Distribution Hub
+                    Managed by <strong>{siteConfig.companyName}</strong> • Global Distribution Hub
                   </div>
                 </div>
 
@@ -949,7 +949,7 @@ export default function App() {
 
                   {formSubmitted && (
                     <div style={{ marginTop: '16px', padding: '12px', background: '#ecfdf5', color: '#065f46', borderRadius: '8px', fontSize: '0.9rem' }}>
-                      âœ“ Thank you! Your message has been received by {siteConfig.companyName}. We will reply within 24 hours.
+                      ✓ Thank you! Your message has been received by {siteConfig.companyName}. We will reply within 24 hours.
                     </div>
                   )}
                 </div>
@@ -1224,7 +1224,7 @@ export default function App() {
                 <h1 className="detail-product-title">{activeProduct.name}</h1>
 
                 <div className="detail-reviews-row">
-                  <div className="star-rating">â˜…â˜…â˜…â˜…â˜…</div>
+                  <div className="star-rating">★★★★★</div>
                   <span className="rating-score">{activeProduct.rating}</span>
                   <span className="review-count">({activeProduct.reviewCount || 35} verified B2B partner reviews)</span>
                 </div>
@@ -1348,7 +1348,7 @@ export default function App() {
                   <a href={`tel:${siteConfig.phonePrimaryTel}`} className="help-link">
                     <Phone size={14} /> {siteConfig.phonePrimary}
                   </a>
-                  <span className="sep">â€¢</span>
+                  <span className="sep">•</span>
                   <a href={`mailto:${siteConfig.email}`} className="help-link">
                     <Mail size={14} /> {siteConfig.email}
                   </a>
@@ -1466,7 +1466,7 @@ export default function App() {
                     <div className="product-body">
                       <div className="product-header-row">
                         <span className="product-sku">SKU: {prod.sku}</span>
-                        <span className="stock-tag">â— {prod.availability}</span>
+                        <span className="stock-tag">● {prod.availability}</span>
                       </div>
                       <h3 className="product-title">
                         <button 
@@ -1523,7 +1523,7 @@ export default function App() {
               <strong>{siteConfig.legalName}</strong> is dedicated to delivering excellence in global wholesale distribution and consumer essentials. {siteConfig.about.mission}
             </p>
             <p style={{ fontSize: '1rem', color: '#475569', lineHeight: 1.8, marginBottom: '20px' }}>
-              We pride ourselves on thoughtful sourcing â€” choosing products that deliver genuine performance, high customer satisfaction, and dependable quality for retail and wholesale partners worldwide.
+              We pride ourselves on thoughtful sourcing — choosing products that deliver genuine performance, high customer satisfaction, and dependable quality for retail and wholesale partners worldwide.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px', margin: '36px 0' }}>
               <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '14px', border: '1px solid #e2e8f0' }}>
@@ -1754,7 +1754,7 @@ export default function App() {
               <div style={{ marginBottom: '24px', borderLeft: '4px solid #1e7087', paddingLeft: '16px' }}>
                 <h3 style={{ fontSize: '1.25rem', color: 'var(--primary-navy)', marginBottom: '8px' }}>Supplier Inquiries</h3>
                 <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                  Tell us about your business and the products youâ€™re looking to source. Share product details, brand information, and your preferred order quantities. Our team will review your inquiry and follow up about potential next steps.
+                  Tell us about your business and the products you're looking to source. Share product details, brand information, and your preferred order quantities. Our team will review your inquiry and follow up about potential next steps.
                 </p>
               </div>
 
@@ -1912,7 +1912,7 @@ export default function App() {
 
                 {formSubmitted && (
                   <div style={{ marginTop: '16px', padding: '12px', background: '#ecfdf5', color: '#065f46', borderRadius: '8px', fontSize: '0.9rem' }}>
-                    Thank you! Your message has been received by {siteConfig.companyName}. We will reply within 24 hours.
+                    ✓ Thank you! Your message has been received by {siteConfig.companyName}. We will reply within 24 hours.
                   </div>
                 )}
               </div>
@@ -1933,7 +1933,7 @@ export default function App() {
             <div style={{ marginTop: '16px', fontSize: '0.85rem', color: '#cbd5e1' }}>
               <div><strong>Management:</strong> {siteConfig.companyName}</div>
               <div><strong>Operations:</strong> Global Distribution & Wholesale Trade Hub</div>
-              <div><strong>Trade Desk Hotline:</strong> {siteConfig.phoneDirect} â€¢ {siteConfig.email}</div>
+              <div><strong>Trade Desk Hotline:</strong> {siteConfig.phoneDirect} • {siteConfig.email}</div>
             </div>
           </div>
 
@@ -2022,7 +2022,7 @@ export default function App() {
 
             {newsletterSuccess && (
               <div style={{ marginTop: '10px', color: '#4ade80', fontSize: '0.82rem' }}>
-                âœ“ Thank you for subscribing to our wholesale bulletin!
+                ✓ Thank you for subscribing to our wholesale bulletin!
               </div>
             )}
           </div>
@@ -2030,10 +2030,10 @@ export default function App() {
 
         <div className="footer-bottom">
           <div>
-            Â© {new Date().getFullYear()} <strong>{siteConfig.legalName}</strong>. All rights reserved.
+            &copy; {new Date().getFullYear()} <strong>{siteConfig.legalName}</strong>. All rights reserved.
           </div>
           <div style={{ color: '#64748b' }}>
-            Managed by {siteConfig.companyName} â€¢ Global Logistics & Distribution Hub
+            Managed by {siteConfig.companyName} &bull; Global Logistics & Distribution Hub
           </div>
         </div>
       </footer>
@@ -2132,8 +2132,7 @@ export default function App() {
                               setCartOpen(false);
                             }}
                           >
-                            View details â†’
-                          </button>
+                            View details →</button>
                         </div>
                       </div>
                     </div>
@@ -2160,7 +2159,7 @@ export default function App() {
                   <a 
                     href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
                       `Hello ${siteConfig.companyName}, I want to place an order:\n\n` +
-                      cart.map(i => `â€¢ ${i.product.name} (SKU: ${i.product.sku}) - Qty: ${i.quantity} x ${i.product.price} = ${siteConfig.currencySymbol || "$"}${(i.product.priceNumeric * i.quantity).toLocaleString()}`).join('\n') +
+                      cart.map(i => `• ${i.product.name} (SKU: ${i.product.sku}) - Qty: ${i.quantity} x ${i.product.price} = ${siteConfig.currencySymbol || "$"}${(i.product.priceNumeric * i.quantity).toLocaleString()}`).join('\n') +
                       `\n\nTotal Estimated: ${siteConfig.currencySymbol || "$"}${cartSubtotal.toLocaleString()}\nTotal Units: ${totalCartItems}`
                     )}`}
                     target="_blank"
@@ -2291,7 +2290,7 @@ export default function App() {
               <>
                 <h3 className="modal-title">Wholesale Checkout / Purchase Order</h3>
                 <p className="modal-subtitle">
-                  Submitting order for: <strong>{totalCartItems} units â€¢ Total: {siteConfig.currencySymbol || "$"} {cartSubtotal.toLocaleString()}</strong>
+                  Submitting order for: <strong>{totalCartItems} units • Total: {siteConfig.currencySymbol || "$"} {cartSubtotal.toLocaleString()}</strong>
                 </p>
                 <form onSubmit={handleFormSubmit} className="modal-form">
                   <div className="form-group">
