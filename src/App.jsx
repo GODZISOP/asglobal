@@ -4,7 +4,7 @@ import {
   Send, ExternalLink, ShieldCheck, Truck, Award,
   X, MessageSquare, Layers, Building2, ShoppingCart, Menu as MenuIcon,
   Plus, Minus, Trash2, ShoppingBag, Eye, ArrowLeft, Check,
-  LayoutGrid, Sparkles, ChevronDown, Package, Star, Globe
+  LayoutGrid, Sparkles, ChevronDown, Package, Star, Globe, User
 } from 'lucide-react';
 import { categories, products } from './data/products';
 import { siteConfig } from './data/siteConfig';
@@ -870,6 +870,14 @@ export default function App() {
                     <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.4rem', marginBottom: '20px', color: '#f5efe6' }}>Direct Coordinates</h3>
                     
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', fontSize: '0.95rem' }}>
+                      <div style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
+                        <User size={20} color="var(--accent-teal)" style={{ marginTop: '2px', flexShrink: 0 }} />
+                        <div>
+                          <div style={{ color: '#b8aba0', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Contact Person</div>
+                          <div style={{ color: '#fff', fontWeight: '600' }}>{siteConfig.ownerFullName}</div>
+                        </div>
+                      </div>
+
                       <div style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
                         <Mail size={20} color="var(--accent-teal)" style={{ marginTop: '2px', flexShrink: 0 }} />
                         <div>
@@ -1833,6 +1841,14 @@ export default function App() {
                 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', fontSize: '0.95rem' }}>
                   <div style={{ display: 'flex', gap: '12px' }}>
+                    <User size={20} color="var(--accent-teal)" />
+                    <div>
+                      <div style={{ color: '#94a3b8', fontSize: '0.8rem', textTransform: 'uppercase' }}>Contact Person</div>
+                      <div style={{ color: '#fff', fontWeight: '600' }}>{siteConfig.ownerFullName}</div>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'flex', gap: '12px' }}>
                     <Mail size={20} color="var(--accent-teal)" />
                     <div>
                       <div style={{ color: '#94a3b8', fontSize: '0.8rem', textTransform: 'uppercase' }}>Email</div>
@@ -1949,6 +1965,7 @@ export default function App() {
               Quality products online. Sourcing and distribution dedicated to supplying top tier merchandise with transparent global logistics.
             </p>
             <div style={{ marginTop: '16px', fontSize: '0.85rem', color: '#cbd5e1' }}>
+              <div><strong>Contact Person:</strong> {siteConfig.ownerFullName}</div>
               <div><strong>Management:</strong> {siteConfig.companyName}</div>
               <div><strong>Address:</strong> {siteConfig.address.full}</div>
               <div><strong>Trade Desk Hotline:</strong> {siteConfig.phoneDirect} • {siteConfig.email}</div>
@@ -1968,6 +1985,9 @@ export default function App() {
           <div className="footer-col">
             <h4>Contacts</h4>
             <ul style={{ marginBottom: '20px' }}>
+              <li style={{ color: '#ffffff', fontWeight: '600' }}>
+                {siteConfig.ownerFullName}
+              </li>
               <li>
                 <a href={`mailto:${siteConfig.email}`}>
                   {siteConfig.email}
