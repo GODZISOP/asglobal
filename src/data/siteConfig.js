@@ -23,23 +23,24 @@ export const siteConfig = {
   // ─────────────────────────────────────────────
   // 📞 PHONE, WHATSAPP & EMAIL
   // ─────────────────────────────────────────────
-  phonePrimary:    "(+92) 321 2218891",   // Top nav display
-  phonePrimaryTel: "+923212218891",         // tel: dial link
-  phoneDirect:     "(+92) 321 2218891",   // Contact page direct line
-  phoneDirectTel:  "+923212218891",         // tel: dial link
-  whatsappNumber:  "923212218891",          // Numbers only (no + or spaces)
-  whatsappDisplay: "(+92) 321 2218891",
+  phonePrimary:    "+1 3025872947",        // Top nav display
+  phonePrimaryTel: "+13025872947",         // tel: dial link
+  phoneDirect:     "+1 3025872947",        // Contact page direct line
+  phoneDirectTel:  "+13025872947",         // tel: dial link
+  whatsappNumber:  "13025872947",          // Numbers only (no + or spaces)
+  whatsappDisplay: "+1 3025872947",
   email:           "info@asglobaltradingllc.com",
+  emailSecondary:  "asglobaltradingllc@gmail.com",
   website:         "www.asglobaltradingllc.com",
 
   // ─────────────────────────────────────────────
   // 📍 ADDRESS & HUBS
   // ─────────────────────────────────────────────
   address: {
-    line1:        "Global Distribution Trade Desk",
-    line2:        "Middle East & North America Logistics",
-    full:         "Global Distribution Trade Hub",
-    cityStateZip: "Global Logistics Trade Desk",
+    line1:        "B 102, New Dhoraji Housing, Block 4",
+    line2:        "Gulshan Iqbal, Karachi",
+    full:         "B 102 New Dhoraji Housing Block 4, Gulshan Iqbal, Karachi",
+    cityStateZip: "Gulshan Iqbal, Karachi",
     jurisdiction: "Commercial LLC Registered"
   },
   hubs: {

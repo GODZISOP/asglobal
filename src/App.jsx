@@ -874,9 +874,18 @@ export default function App() {
                         <Mail size={20} color="var(--accent-teal)" style={{ marginTop: '2px', flexShrink: 0 }} />
                         <div>
                           <div style={{ color: '#b8aba0', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Email</div>
-                          <a href={`mailto:${siteConfig.email}`} style={{ color: '#fff', textDecoration: 'none', fontWeight: '600' }}>
-                            {siteConfig.email}
-                          </a>
+                          <div>
+                            <a href={`mailto:${siteConfig.email}`} style={{ color: '#fff', textDecoration: 'none', fontWeight: '600' }}>
+                              {siteConfig.email}
+                            </a>
+                          </div>
+                          {siteConfig.emailSecondary && (
+                            <div style={{ marginTop: '4px' }}>
+                              <a href={`mailto:${siteConfig.emailSecondary}`} style={{ color: '#cbd5e1', textDecoration: 'none', fontWeight: '500' }}>
+                                {siteConfig.emailSecondary}
+                              </a>
+                            </div>
+                          )}
                         </div>
                       </div>
 
@@ -891,7 +900,7 @@ export default function App() {
                       <div style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
                         <MapPin size={20} color="var(--accent-teal)" style={{ marginTop: '2px', flexShrink: 0 }} />
                         <div>
-                          <div style={{ color: '#b8aba0', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Operating Trade Hub</div>
+                          <div style={{ color: '#b8aba0', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Primary Address</div>
                           <div style={{ color: '#fff', fontWeight: '600' }}>{siteConfig.address.line1}</div>
                           <div style={{ color: '#cbd5e1' }}>{siteConfig.address.line2}</div>
                         </div>
@@ -1827,9 +1836,18 @@ export default function App() {
                     <Mail size={20} color="var(--accent-teal)" />
                     <div>
                       <div style={{ color: '#94a3b8', fontSize: '0.8rem', textTransform: 'uppercase' }}>Email</div>
-                      <a href={`mailto:${siteConfig.email}`} style={{ color: '#fff', textDecoration: 'none', fontWeight: '600' }}>
-                        {siteConfig.email}
-                      </a>
+                      <div>
+                        <a href={`mailto:${siteConfig.email}`} style={{ color: '#fff', textDecoration: 'none', fontWeight: '600' }}>
+                          {siteConfig.email}
+                        </a>
+                      </div>
+                      {siteConfig.emailSecondary && (
+                        <div style={{ marginTop: '4px' }}>
+                          <a href={`mailto:${siteConfig.emailSecondary}`} style={{ color: '#cbd5e1', textDecoration: 'none', fontWeight: '500' }}>
+                            {siteConfig.emailSecondary}
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </div>
 
@@ -1854,9 +1872,9 @@ export default function App() {
                   <div style={{ display: 'flex', gap: '12px' }}>
                     <MapPin size={20} color="var(--accent-teal)" />
                     <div>
-                      <div style={{ color: '#94a3b8', fontSize: '0.8rem', textTransform: 'uppercase' }}>Operating Trade Hub</div>
-                      <div style={{ color: '#fff', fontWeight: '600' }}>Global Distribution Trade Desk</div>
-                      <div style={{ color: '#cbd5e1' }}>Middle East & North America Logistics</div>
+                      <div style={{ color: '#94a3b8', fontSize: '0.8rem', textTransform: 'uppercase' }}>Primary Address</div>
+                      <div style={{ color: '#fff', fontWeight: '600' }}>{siteConfig.address.line1}</div>
+                      <div style={{ color: '#cbd5e1' }}>{siteConfig.address.line2}</div>
                     </div>
                   </div>
 
@@ -1932,7 +1950,7 @@ export default function App() {
             </p>
             <div style={{ marginTop: '16px', fontSize: '0.85rem', color: '#cbd5e1' }}>
               <div><strong>Management:</strong> {siteConfig.companyName}</div>
-              <div><strong>Operations:</strong> Global Distribution & Wholesale Trade Hub</div>
+              <div><strong>Address:</strong> {siteConfig.address.full}</div>
               <div><strong>Trade Desk Hotline:</strong> {siteConfig.phoneDirect} • {siteConfig.email}</div>
             </div>
           </div>
@@ -1955,11 +1973,19 @@ export default function App() {
                   {siteConfig.email}
                 </a>
               </li>
+              {siteConfig.emailSecondary && (
+                <li>
+                  <a href={`mailto:${siteConfig.emailSecondary}`}>
+                    {siteConfig.emailSecondary}
+                  </a>
+                </li>
+              )}
               <li>
                 <a href={`tel:${siteConfig.phoneDirectTel}`}>
                   {siteConfig.phoneDirect}
                 </a>
               </li>
+              <li>{siteConfig.address.full}</li>
               {siteConfig.website && (
                 <li>
                   <a href={`https://${siteConfig.website.replace(/^https?:\/\//, '')}`} target="_blank" rel="noreferrer">
